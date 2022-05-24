@@ -9,7 +9,8 @@ body {
 	line-height: 27px;
 	font-weight: 400;
 	color: $default;
-	overflow: hidden;
+	overflow-x: hidden;
+	min-width: 320px;
 }
 
 .wrapper {
@@ -29,6 +30,31 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	button {
+		background-color: $title;
+		border: none;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		padding: 0;
+		font-size: 0;
+		cursor: pointer;
+	}
+	li {
+		margin: 0 15px;
+	}
+	li.slick-active {
+		button{
+			background-color:#FFEF35;
+		}
+		
+	}
+        
 }
 
 
