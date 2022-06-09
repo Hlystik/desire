@@ -208,8 +208,13 @@
       left: auto;
     }
   }
+  //добавил был скрыт на макете
+  &__items-box2 {
+    display: flex;
+    justify-content: flex-end;
+  }
   &__item {
-    width: 250px;
+    width: 257px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -232,9 +237,12 @@
   &__item--consultation {
     padding-bottom: 38px;
   }
+  &__item--delivery,
   &__item--measurements {
     padding-top: 38px;
-    margin-left: 306px;
+  }
+  &__item--measurements {
+    margin-right: 303px;
     &::after {
       content: '';
       position: absolute;
