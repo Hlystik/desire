@@ -143,3 +143,117 @@
   }
 }
 
+.decor{
+  padding: 172px 0 156px;
+  background: url(../../images/decor-bg.jpg) center (center/cover) no-repeat;
+/*   background-size: cover;
+  background-repeat: no-repeat; */
+  min-height: 600px;
+  &__title {
+    max-width: 731px;
+    color: $title;
+    @extend %title-font;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    font-size: 60px;
+    line-height: 80px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 200px;
+      background: #6D7278;
+    }
+
+  }
+  &__text {
+    max-width: 540px;
+  }
+}
+
+.works-path {
+  padding: 80px 0 30px;
+
+  // .works-path__title
+
+  &__title {
+    color: $title;
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 51px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__items-box {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 2px solid rgba($title, .7);
+    position: relative;
+    &::before, 
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background-color: $title;
+      border-radius: 50%;
+    }
+    &::after {
+      right: 0;
+      left: auto;
+    }
+  }
+  &__item {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    height: 100%;
+  }
+  &__item--production {
+    margin-left: 317px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 20px;
+      width: 2px;
+      background: rgba($title, .7);
+    }
+  }
+  &__item--production,
+  &__item--consultation {
+    padding-bottom: 38px;
+  }
+  &__item--measurements {
+    padding-top: 38px;
+    margin-left: 306px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 2px;
+      background: rgba($title, .7);
+    }
+  }
+  &__item-title {
+    margin-left: 13px;
+    color: $title;
+    @extend %title-font;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  &__item-text {
+    margin-top: 13px;
+  }
+}
+
