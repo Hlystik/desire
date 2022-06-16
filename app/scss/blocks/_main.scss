@@ -367,9 +367,6 @@
   &__content {
     padding: 130px 0 40px;
   }
-
-  // .about__title
-
   &__title {
     max-width: 880px;
     color: $title;
@@ -389,34 +386,18 @@
       background: #6D7278;
     }
   }
-
-  // .about__text
-
   &__text {
     margin-left: 284px;
     p{
       margin-bottom: 30px;
     }
   }
-
-  // .about__popup
-
   &__popup {
     background: url(../../images/popup-bg.jpg) top (center / cover) no-repeat;
     min-height: 414px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  // .about__popup-play
-
-  &__popup-play {
-  }
-
-  // .about__popup-imgbtn
-
-  &__popup-imgbtn {
   }
 }
 
