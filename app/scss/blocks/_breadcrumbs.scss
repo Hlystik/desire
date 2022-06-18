@@ -1,15 +1,11 @@
 .breadcrumbs {
   background: rgba(#DFDFDF, .5);
   padding: 13px 14px;
-
-  // .breadcrumbs__list
-
+  position: relative;
+  z-index: 99;
   &__list {
     display: flex;
   }
-
-  // .breadcrumbs__item
-
   &__item::after {
     content: '/';
     margin-left: -4px;
@@ -18,9 +14,6 @@
   &__item:last-child::after {
     content: '';
   }
-
-  // .breadcrumbs__link
-
   &__link {
     font-size: 14px;
     color: $default;
