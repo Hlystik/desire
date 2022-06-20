@@ -593,12 +593,6 @@
 
 .contact-slider {
   padding-bottom: 102px;
-
-  // .contact-slider__wraper
-
-  &__wraper {
-  }
-
   &__link {
     width: auto !important;
     position: relative;
@@ -609,16 +603,10 @@
       }
     }
   }
-
-  // .contact-slider__img
-
   &__img {
     min-height: 170px;
     object-fit: cover;
   }
-
-  // .contact-slider__title
-
   &__title {
     position: absolute;
     top: 0;
