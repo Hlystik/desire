@@ -11,6 +11,9 @@
     padding: 0;
     cursor: pointer;
   }
+  &__btn-menu {
+    display: none;
+  }
 }
 .menu {
   padding-right: 15px;

@@ -149,7 +149,7 @@
   background: url(../../images/decor-bg.jpg) center (center/cover) no-repeat;
 /*   background-size: cover;
   background-repeat: no-repeat; */
-  min-height: 600px;
+  max-height: 600px;
   &__title {
     max-width: 731px;
     color: $title;
@@ -1019,3 +1019,5 @@
     cursor: pointer;
   }
 }
+
+@import 'blocks/media.scss';

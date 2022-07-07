@@ -7,6 +7,10 @@ $(function () {
         $('.rightside-menu').addClass('rightside-menu--close');      
     });
 
+    $('.header__btn-menu').on('click', function () {
+        $('.menu').toggleClass('menu--open');      
+    });
+
     $('.top__slider').slick({
         dots: true,
         arrows: false,
@@ -27,6 +31,20 @@ $(function () {
         nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrowright"><img src="icons/next.svg"></button>',
         autoplay: true
     });
+
+    $( window ).on('resize', function() {
+        if ($(window).width() <= '650'){
+            $('.works-path__item--measurements').appendTo('.works-path__items-box');
+        } else {
+            $('.works-path__item--measurements').prependTo('.works-path__items-box2');
+        }
+    });
+  /*   if ($(window).width() <= 650){
+        $('.works-path__item--measurements').appendTo('.works-path__items-box');
+    };
+    if ($(window).width() > 651){
+        $('.works-path__item--measurements').prependTo('.works-path__items-box2');
+    }; */
 
     const mixer = mixitup('.gallery__inner', {
         load: {
